@@ -16,7 +16,7 @@ public class CharCounter {
     /**
      * Process input String and returns result with maximum character count with currosponding characters
      *
-     * @param inputString
+     * @param  inputString
      * @return String representation of result
      */
     public static String characterProcessing(String inputString) {
@@ -39,9 +39,8 @@ public class CharCounter {
             return EMPTY_STRING;
         }
 
-        /**
-         * Convert the string to character array
-         */
+         // Convert the string to character array
+
         char[] char_array = inputString.toCharArray();
 
         /**
@@ -79,8 +78,8 @@ public class CharCounter {
     }
 
     /**
-     * Accept a map and an integer and returns the set of character
-     * with value set as passed integer
+     * Accept a map and an integer and returns the set of characters
+     * with occurances = maxCount
      *
      * @param map
      * @param maxCount
@@ -97,9 +96,8 @@ public class CharCounter {
 
     /**
      * Generate the final string to be sent back to the caller
-     *
      * @param map
-     * @return result string
+     * @return resulted string
      */
     private static String convertToString(Map<Integer, Set<Character>> map) {
         return "The most frequent characters are " +

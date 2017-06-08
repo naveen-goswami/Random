@@ -25,37 +25,26 @@ public class GuiProcessor {
         // Assigning title to the window
         window.setTitle("Character Count");
 
-        /**
-         * Setting up the grid
-         */
+        // Setting up the grid
         GridPane grid = new GridPane();
         grid.setStyle("-fx-border-style: solid;");
         grid.setHgap(20);
         grid.setVgap(20);
         grid.setPadding(new Insets(20, 20, 20, 20));
 
-        /**
-         * Instantiating the label and add it to the gird
-         *
-         */
+        //Instantiating the label and add it to the gird
         Label label = new Label("Text:");
         grid.add(label, 0, 1);
 
-        /**
-         * Setting up TextField for user input
-         */
+        //Setting up TextField for user input
         TextField inputText = new TextField();
         grid.add(inputText, 1, 1);
 
-        /**
-         * Setting up the response text below the TextField
-         */
+        //Setting up the response text below the TextField
         Text text = new Text();
         grid.add(text, 1, 2);
 
-
         // Instantiating Scene and setting the dimensions
-
         scene = new Scene(grid, 600, 300);
         window.setScene(scene);
         window.show();

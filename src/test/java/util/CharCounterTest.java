@@ -15,7 +15,7 @@ public class CharCounterTest {
 
 
     @Test
-    public void characterProcessing_nullString_returnEmptyStringTest() {
+    public void characterProcessing_nullString_returnEmptyString_Test() {
 
         String result = CharCounter.characterProcessing(null);
 
@@ -24,7 +24,7 @@ public class CharCounterTest {
     }
 
     @Test
-    public void characterProcessing_emptyString_returnEmptyStringTest() {
+    public void characterProcessing_emptyString_returnEmptyString_Test() {
 
         String result = CharCounter.characterProcessing("");
 
@@ -33,7 +33,7 @@ public class CharCounterTest {
     }
 
     @Test
-    public void characterProcessing_StringWithSpacesOnly_returnEmptyStringTest() {
+    public void characterProcessing_StringWithSpacesOnly_returnEmptyString_Test() {
 
         String result = CharCounter.characterProcessing("             ");
 
@@ -43,7 +43,7 @@ public class CharCounterTest {
 
 
     @Test
-    public void characterProcessing_StringWithNumeralsOnly_returnStringWithMaxNumeralsTest() {
+    public void characterProcessing_StringWithNumeralsOnly_returnStringWithMaxNumerals_Test() {
 
         String result = CharCounter.characterProcessing("555 12 33 4445");
 
@@ -53,7 +53,7 @@ public class CharCounterTest {
     }
 
     @Test
-    public void characterProcessing_StringWithSpecialCharacters_returnStringWithMaxSpecialCharactersTest() {
+    public void characterProcessing_StringWithSpecialCharacters_returnStringWithMaxSpecialCharacters_Test() {
 
         String result = CharCounter.characterProcessing("Umpa Likes :) Lumpa!!!!!");
 
@@ -64,7 +64,7 @@ public class CharCounterTest {
 
 
     @Test
-    public void characterProcessing_StringWithCapitalCharacters_returnStringWithLowerCharactersCountsTest() {
+    public void characterProcessing_StringWithCapitalCharacters_returnStringWithLowerCharactersCounts_Test() {
 
         String result = CharCounter.characterProcessing("UMPA IS ANGRY ON LUMPA");
 
@@ -74,7 +74,7 @@ public class CharCounterTest {
     }
 
     @Test
-    public void characterProcessing_SingleMaxCharacterString_returnSingleMaxCharacterStringTest() {
+    public void characterProcessing_SingleMaxCharacterString_returnSingleMaxCharacterString_Test() {
 
         String result = CharCounter.characterProcessing("Umpa and Lumpa went to market");
 
@@ -84,7 +84,7 @@ public class CharCounterTest {
     }
 
     @Test
-    public void characterProcessing_MultipleMaxCharacterString_returnMultipleMaxCharacterString() {
+    public void characterProcessing_MultipleMaxCharacterString_returnMultipleMaxCharacterString_Test() {
 
         String result = CharCounter.
                 characterProcessing("Umpa and Lumpa are lazy as hell but," +
@@ -96,7 +96,7 @@ public class CharCounterTest {
     }
 
     @Test
-    public void characterProcessing_StringWithExtendedAscii_returnStringWithExtendedAscii() {
+    public void characterProcessing_StringWithExtendedAscii_returnStringWithExtendedAscii_Test() {
 
         String result = CharCounter.
                 characterProcessing(" I like Umpa because Lumpa is sometimes ÄÅÉæÆö ");
